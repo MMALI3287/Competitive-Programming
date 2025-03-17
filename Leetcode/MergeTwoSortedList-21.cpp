@@ -8,7 +8,7 @@ struct ListNode
     ListNode *next;
     ListNode() : val(0), next(nullptr) {}
     ListNode(int x) : val(x), next(nullptr) {}
-    ListNode(int x, ListNode *next) : val(x), next(next) {} // Fixed typo here
+    ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
 class Solution
@@ -38,8 +38,6 @@ public:
         return dummy.next;
     }
 };
-
-// Helper function to create a linked list from vector
 ListNode *createList(vector<int> arr)
 {
     if (arr.empty())

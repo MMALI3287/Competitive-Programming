@@ -5,17 +5,11 @@ int main()
 {
     int w;
     cin >> w;
-    if (w <= 2)
-    {
-        cout << "NO" << endl;
-    }
-    else if (w % 2 == 0)
-    {
+
+    if (w % 2 == 0 && w > 2) // For w=2, can't divide into two positive even parts (smallest even number is 2)
         cout << "YES" << endl;
-    }
-    else if (w % 2 != 0)
-    {
+    else
         cout << "NO" << endl;
-    }
+
     return 0;
 }
